@@ -1,0 +1,263 @@
+#
+# TABLE STRUCTURE FOR: customer
+#
+
+DROP TABLE IF EXISTS `customer`;
+
+CREATE TABLE `customer` (
+  `customer_id` int(11) NOT NULL,
+  `firstname` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lastname` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip` varchar(16) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (0, 'Reggie', 'Gibson', 'West Bryanaberg', '48509-3317', '929.218.8727');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (3, 'Berenice', 'Stanton', 'Missouriton', '33476-1291', '(129)887-3682');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (16, 'Elise', 'O\'Hara', 'New Pierrefurt', '38177-6626', '+87(9)8569955401');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (35, 'Fred', 'Tremblay', 'North Allene', '57216', '1-928-626-6816');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (38, 'Dameon', 'Huel', 'Mackenzieshire', '26351', '349-839-0065x14401');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (44, 'Addison', 'Leannon', 'Lake Mae', '25184', '+91(2)6907183948');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (154, 'Jayce', 'Rogahn', 'Port Ned', '75812-1778', '(324)772-6838');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (996, 'Effie', 'Swift', 'West Jerel', '47801', '+47(0)6934626301');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (5906, 'Ronaldo', 'Flatley', 'Cassinstad', '73685-5265', '(431)632-2723');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (152342, 'Karley', 'Goodwin', 'Ramonchester', '10527', '(194)678-5801x6001');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (357512, 'Fatima', 'Walsh', 'North Dimitriport', '00648', '590-580-2223x5674');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (658100, 'Candelario', 'Becker', 'Goyetteville', '38935', '(740)599-3578x08637');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (719325, 'Guiseppe', 'Lind', 'Port Courtneyside', '87883-0077', '1-731-588-5715x933');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (720828, 'Lindsay', 'Pfannerstill', 'South Eloise', '98439', '(979)196-4797');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (907107, 'Christop', 'Berge', 'Wilmerbury', '49831', '148.800.6332x347');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (5142431, 'Lucie', 'Rosenbaum', 'West Twilamouth', '46525-3649', '09751215913');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (72660407, 'Phoebe', 'Torp', 'Lake Paige', '39174', '(641)329-5448x924');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (601155386, 'Crystel', 'Kub', 'South Vidalmouth', '04702', '1-491-492-4605x40144');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (725877881, 'Demetrius', 'Gorczany', 'Leslieview', '17553', '513-807-0887x33698');
+INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `city`, `zip`, `phone`) VALUES (771876833, 'Jennie', 'Yundt', 'Cummeratashire', '52343', '(535)906-8885');
+
+
+#
+# TABLE STRUCTURE FOR: item_category
+#
+
+DROP TABLE IF EXISTS `item_category`;
+
+CREATE TABLE `item_category` (
+  `category_id` int(11) NOT NULL,
+  `restuarent_id` int(11) DEFAULT NULL,
+  `item_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `price` decimal(12,2) DEFAULT NULL,
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (0, 0, 'quo', '129412969.84');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (2, 0, 'assumenda', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (8, 0, 'corrupti', '246323665.75');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (195, 0, 'distinctio', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (233, 0, 'nostrum', '6557457.55');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (551, 0, 'quas', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (585, 0, 'molestiae', '514939633.19');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (804, 0, 'impedit', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (21424, 0, 'voluptatem', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (58210, 0, 'rem', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (84231, 0, 'facilis', '274251210.80');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (4812637, 0, 'non', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (5181034, 0, 'eum', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (8822687, 0, 'tempore', '349.24');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (26518553, 0, 'vel', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (27973545, 0, 'ab', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (58482944, 0, 'sed', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (63161178, 0, 'facilis', '358.91');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (70533758, 0, 'velit', '0.00');
+INSERT INTO `item_category` (`category_id`, `restuarent_id`, `item_name`, `price`) VALUES (957964473, 0, 'quod', '0.00');
+
+
+#
+# TABLE STRUCTURE FOR: order_basket
+#
+
+DROP TABLE IF EXISTS `order_basket`;
+
+CREATE TABLE `order_basket` (
+  `basket_id` int(11) NOT NULL,
+  `order_id` int(11) DEFAULT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  `restuarent_id` int(11) DEFAULT NULL,
+  `price` decimal(12,2) DEFAULT NULL,
+  `total_price` decimal(12,2) DEFAULT NULL,
+  `items_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `items_quantity` int(11) DEFAULT NULL,
+  `offer_price` decimal(12,2) DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zip` varchar(16) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `instructions` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`basket_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (0, 5509, 94716, 804, '804.00', '2.33', '804', 12371, '27846403.05', '996', '996', '996', '94716');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (3, 25085849, 124635946, 27973545, '27973545.00', '49414496.00', '27973545', 1066, '1.00', '5142431', '5142431', '5142431', '124635946');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (8, 0, 0, 0, '0.00', '59.56', '0', 0, '0.00', '0', '0', '0', '0');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (9, 43, 1, 2, '2.00', '1288249.64', '2', 81805, '381985455.12', '3', '3', '3', '1');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (30, 84117, 763077, 84231, '84231.00', '0.00', '84231', 1772, '0.00', '357512', '357512', '357512', '763077');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (164, 7345, 273979, 21424, '21424.00', '3717000.57', '21424', 5479, '0.22', '5906', '5906', '5906', '273979');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (171, 16682976, 12549759, 26518553, '26518553.00', '994.37', '26518553', 678632583, '438.51', '907107', '907107', '907107', '12549759');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (260, 4885, 87767, 585, '585.00', '1665943.94', '585', 501743, '0.00', '154', '154', '154', '87767');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (338, 55550871, 158683676, 58482944, '58482944.00', '5940188.83', '58482944', 1717561, '45495621.20', '72660407', '72660407', '72660407', '158683676');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (1150, 395, 92, 233, '233.00', '860923849.03', '233', 60551, '527991.66', '38', '38', '38', '92');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (12505, 612227497, 399937333, 70533758, '70533758.00', '0.00', '70533758', 0, '912931.35', '725877881', '725877881', '725877881', '399937333');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (91868, 273, 30, 195, '195.00', '20678674.38', '195', 1530003, '0.00', '35', '35', '35', '30');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (98791, 8176876, 6112070, 8822687, '8822687.00', '802742.31', '8822687', 0, '0.00', '720828', '720828', '720828', '6112070');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (680219, 65, 7, 8, '8.00', '0.13', '8', 1011127, '454224529.15', '16', '16', '16', '7');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (719671, 66732, 649900, 58210, '58210.00', '209242.01', '58210', 1773748, '44514297.72', '152342', '152342', '152342', '649900');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (3788260, 98247165, 225463118, 63161178, '63161178.00', '950.96', '63161178', 0, '789791.10', '601155386', '601155386', '601155386', '225463118');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (4560544, 592354, 5037161, 5181034, '5181034.00', '87.90', '5181034', 0, '946998.86', '719325', '719325', '719325', '5037161');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (9818500, 977090781, 441295026, 957964473, '957964473.00', '55.47', '957964473', 0, '518727327.00', '771876833', '771876833', '771876833', '441295026');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (25935482, 872, 61320, 551, '551.00', '0.00', '551', 3, '56342.95', '44', '44', '44', '61320');
+INSERT INTO `order_basket` (`basket_id`, `order_id`, `customer_id`, `restuarent_id`, `price`, `total_price`, `items_name`, `items_quantity`, `offer_price`, `city`, `zip`, `phone`, `instructions`) VALUES (102239053, 99403, 796779, 4812637, '4812637.00', '65.41', '4812637', 160748048, '4790341.59', '658100', '658100', '658100', '796779');
+
+
+#
+# TABLE STRUCTURE FOR: order_details
+#
+
+DROP TABLE IF EXISTS `order_details`;
+
+CREATE TABLE `order_details` (
+  `order_id` int(11) NOT NULL,
+  `customer_id` int(11) DEFAULT NULL,
+  `instructions` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (0, 658100, 'Et modi similique eveniet mollitia quo totam voluptatem. Et excepturi illo ipsum. Fugiat ducimus nihil rem ea quia ut voluptatem et.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (1, 996, 'Ullam omnis suscipit officiis doloribus corporis. Dolores dignissimos at cum quia. Dolore voluptatem quo aperiam facilis sit. Assumenda unde blanditiis quia qui. Et molestias et aut aut dolorem voluptates.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (7, 907107, 'Quas et velit quibusdam quo animi debitis excepturi. Eveniet numquam nihil in sed voluptas alias commodi. Hic accusamus ab repellat vel aut.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (30, 601155386, 'Provident in omnis praesentium facilis cupiditate voluptates. Consequatur in est et ea labore repudiandae magni. Soluta ipsum at ut nobis ratione explicabo. Illo fugiat animi in doloremque fuga.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (92, 719325, 'Officia enim maxime consequuntur sit rerum dicta consequatur. Et officiis odio ut. Quo eos velit eum nihil qui. Quaerat sequi autem aut et occaecati.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (61320, 72660407, 'Quo dolorem blanditiis autem et accusantium commodi. Fuga sit sunt et quae magni molestiae. Consequatur et dolor voluptas cum aliquid libero earum. Qui ratione et in voluptas amet.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (87767, 771876833, 'Voluptatem assumenda pariatur consequatur. Tempora voluptatem tenetur et voluptatem esse et. Quam facere omnis nesciunt maiores et pariatur.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (94716, 44, 'Quos occaecati et debitis perferendis. Iste incidunt quis voluptatem dolor molestiae reiciendis qui. Sed ex distinctio nesciunt natus in. Excepturi eum dolore sit omnis iure accusamus sit molestiae.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (273979, 720828, 'Quas tempora explicabo fugit et ipsam aut. Rerum id est quis optio autem. Enim voluptatem ut quasi similique nostrum. Autem suscipit rerum rerum quis.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (649900, 152342, 'Natus incidunt explicabo sit voluptatem ea quia et. Et et nulla officia inventore. Officia necessitatibus magni et explicabo voluptas.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (763077, 0, 'Dolorem assumenda et quaerat laborum quas dolorem aut provident. Voluptas aliquid rem id temporibus praesentium vero id sint. Excepturi nihil quasi quo. Accusantium autem illum in eos corporis nulla.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (796779, 38, 'Sit voluptates quo quia quia nemo harum. Fugit blanditiis et et architecto et corrupti.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (5037161, 357512, 'Sit sit est necessitatibus porro. Possimus sit deleniti est rerum et autem. Provident accusantium quae delectus aut praesentium molestiae. Suscipit pariatur similique est rerum aperiam ipsum sequi.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (6112070, 16, 'Quis vitae rerum aut sit eaque. Excepturi ut velit omnis molestiae et facere veniam ut.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (12549759, 3, 'Ex unde corrupti quisquam consequatur eligendi soluta eos maiores. Quis ab sit maxime harum. Et quam voluptate ut. Sint ex repudiandae ut ex nam asperiores cum non.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (124635946, 725877881, 'Est enim ea est optio autem nobis fugiat. Debitis corporis animi beatae et quis aut. Quidem nulla quo consequuntur illum ut error.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (158683676, 154, 'Molestiae est sit dolore et. Sint sint illo esse. Nihil enim ullam sapiente odit. Cumque enim a mollitia quasi ratione. Dolores commodi vel ut recusandae illum consequatur.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (225463118, 5142431, 'Repudiandae pariatur et mollitia ipsum id reiciendis natus magnam. Accusantium explicabo et eos ratione. Ipsa nulla odit explicabo. Laboriosam harum voluptatum esse suscipit iste.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (399937333, 35, 'Dolorum id veritatis commodi quo sed. Modi eos ut ullam. Distinctio quo perspiciatis sequi porro.');
+INSERT INTO `order_details` (`order_id`, `customer_id`, `instructions`) VALUES (441295026, 5906, 'Commodi consequuntur maiores aut modi qui. Esse ipsam autem aperiam vel nostrum. Voluptas ducimus porro in vitae in. Doloremque vitae labore ea dolorum.');
+
+
+#
+# TABLE STRUCTURE FOR: order_status
+#
+
+DROP TABLE IF EXISTS `order_status`;
+
+CREATE TABLE `order_status` (
+  `status_id` int(11) NOT NULL,
+  `order_id` int(11) DEFAULT NULL,
+  `status_category` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (0, 30, '', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (43, 5037161, '', '\"failed\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (65, 399937333, 'Nisi consequatur impedit nulla tenetur eius fugit maxime. Molestiae aliquid aut maiores blanditiis odit voluptatem distinctio. Atque quaerat voluptas est voluptas. Dolorem est ea quidem velit. Laboriosam sint aut animi.', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (273, 1, 'Maxime aspernatur sed placeat eum voluptas sed. Deleniti quos quam cupiditate ratione illo quisquam est. Voluptatem adipisci ex odit incidunt. Rem suscipit voluptas illo et voluptas iste.', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (395, 6112070, 'Nemo provident facere minus corporis doloribus autem. Quia non porro impedit rem consequuntur repudiandae. Possimus aut quam ea ut aut. Tempore soluta excepturi ut.', '\"failed\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (872, 796779, 'Autem commodi eos natus voluptatem est aut eum architecto. Quo ab animi quis quo. Molestiae quidem quasi amet earum quia.', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (4885, 763077, '', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (5509, 225463118, 'Iusto ut exercitationem id quos qui sed et. Qui neque molestias dicta ipsum nihil illo quia. Est distinctio harum consequuntur eum iusto ab.', '\"failed\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (7345, 649900, 'Reiciendis sunt ut aliquid. Veniam aut non est doloribus mollitia est. Dolorem ducimus est voluptatem sed veniam in. Sint exercitationem consectetur sed et.', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (66732, 124635946, '', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (84117, 7, '', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (99403, 61320, '', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (592354, 12549759, 'Sit eos eum sit in. Error accusamus in dolores rem cupiditate autem voluptas. Quibusdam voluptatum molestias reiciendis qui nam dolores est. Placeat voluptatem consequatur quo aliquid fugit qui laboriosam. Laborum et minus occaecati perferendis tenetur ul', '\"failed\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (8176876, 273979, 'Alias id atque voluptatem fugit. Minima quod animi et aut ut. Sunt quia fugiat corrupti voluptatibus tempore qui quia voluptatibus.', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (16682976, 0, '', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (25085849, 94716, '', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (55550871, 441295026, 'Repellendus est officiis explicabo dolorem. Eligendi et ad corporis eum. Sit error veniam molestias consequatur illum molestiae. Minus vel consequatur velit explicabo blanditiis suscipit.', '\"in progress\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (98247165, 87767, '', '\"failed\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (612227497, 158683676, '', '\"delivered\"');
+INSERT INTO `order_status` (`status_id`, `order_id`, `status_category`, `status_name`) VALUES (977090781, 92, 'Sint totam dicta fuga quia blanditiis ipsum fugiat at. Veniam ut omnis quas sit impedit eaque. Enim optio reprehenderit quam quos qui. Mollitia autem distinctio dicta qui cupiditate.', '\"delivered\"');
+
+
+#
+# TABLE STRUCTURE FOR: restuarent
+#
+
+DROP TABLE IF EXISTS `restuarent`;
+
+CREATE TABLE `restuarent` (
+  `restuarent_id` int(11) NOT NULL,
+  `hygiene_rating` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `open_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `close_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`restuarent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (0, '3', '2008-02-05 19:16:19', '2019-09-09 05:42:35');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (2, '', '1992-04-09 00:22:49', '2002-08-30 13:09:24');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (3, '', '2016-02-23 13:10:09', '2020-06-04 00:18:06');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (4, '', '1993-11-07 11:37:25', '2008-07-28 00:21:33');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (6, '5', '2020-12-08 05:54:49', '1991-05-14 10:47:37');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (36, '', '2011-12-02 16:18:04', '1997-10-26 19:50:15');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (368, '7', '1985-10-09 09:06:31', '2007-07-25 17:46:19');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (422, '1', '1975-10-24 13:51:54', '1990-07-11 21:16:28');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (581, '2', '1978-07-31 20:37:00', '1971-04-17 00:39:15');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (918, '6', '2020-12-07 03:09:39', '1994-12-06 17:24:16');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (5218, '', '2015-10-14 15:21:06', '1972-07-26 03:26:26');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (54202, '', '1983-06-28 04:14:02', '2015-09-18 09:04:38');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (54688, '', '2008-11-27 13:21:16', '2020-05-23 17:52:01');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (61077, '4', '1970-07-17 12:23:53', '1978-04-13 05:09:00');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (82990, '', '1981-05-12 08:58:01', '2017-02-03 16:34:44');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (34052239, '', '2007-02-18 06:56:20', '2010-10-21 12:14:13');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (89404921, '3', '2020-08-04 04:25:01', '2002-05-10 05:29:34');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (327367770, '2', '2001-08-02 09:12:04', '1972-11-04 06:10:21');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (638551468, '', '2005-11-10 00:02:59', '1989-03-07 02:11:17');
+INSERT INTO `restuarent` (`restuarent_id`, `hygiene_rating`, `open_time`, `close_time`) VALUES (810631677, '', '1971-04-07 16:31:03', '1970-10-14 13:39:46');
+
+
+#
+# TABLE STRUCTURE FOR: restuarent_offer
+#
+
+DROP TABLE IF EXISTS `restuarent_offer`;
+
+CREATE TABLE `restuarent_offer` (
+  `offer_id` int(11) NOT NULL,
+  `restuarent_id` int(11) DEFAULT NULL,
+  `category_id` int(11) DEFAULT NULL,
+  `date_active_from` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `date_active_to` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`offer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (2, 2, 2, '1973-04-02 18:07:44', '1994-03-28 01:28:43');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (3, 5218, 84231, '2014-08-25 16:49:28', '1999-09-05 23:42:18');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (39, 3, 8, '2018-09-02 21:56:59', '1976-03-06 11:44:55');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (42, 36, 551, '1994-11-08 17:51:53', '2020-05-07 09:06:05');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (73, 6, 233, '2001-12-15 09:33:52', '2017-01-21 08:18:02');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (77, 34052239, 27973545, '1988-04-24 18:42:52', '2007-09-20 22:06:04');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (504, 638551468, 70533758, '2004-03-23 09:21:05', '2015-11-04 01:11:30');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (795, 82990, 26518553, '1986-06-09 05:05:51', '2004-10-25 19:26:27');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (945, 368, 585, '2011-11-02 13:45:37', '2013-08-07 12:05:55');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (85991, 89404921, 58482944, '2015-11-24 12:08:10', '1983-06-17 19:06:54');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (188031, 918, 58210, '2001-01-24 21:01:09', '1973-10-18 02:50:42');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (251508, 61077, 8822687, '1993-10-12 14:12:14', '1981-05-12 05:11:42');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (277897, 422, 804, '2016-10-16 07:11:08', '1988-05-13 21:18:11');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (599705, 4, 195, '1980-04-04 06:16:11', '1970-05-23 12:48:39');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (7476385, 54688, 5181034, '2010-06-04 04:09:18', '2006-05-16 03:15:20');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (15022284, 0, 0, '2013-08-07 02:08:40', '2015-07-31 14:59:55');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (489721685, 810631677, 957964473, '2002-10-18 11:52:43', '2008-08-20 18:03:55');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (497745033, 54202, 4812637, '1984-01-28 13:55:22', '1990-10-29 21:30:46');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (498481400, 327367770, 63161178, '1971-08-23 02:31:57', '2013-07-05 07:06:07');
+INSERT INTO `restuarent_offer` (`offer_id`, `restuarent_id`, `category_id`, `date_active_from`, `date_active_to`) VALUES (990584704, 581, 21424, '1978-12-21 18:49:11', '2008-11-14 09:23:05');
+
+
